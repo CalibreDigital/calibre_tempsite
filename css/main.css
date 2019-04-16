@@ -1115,8 +1115,7 @@ header {
   header p {
     position: relative;
     top: -1em;
-    color: #888888;
-    letter-spacing: 0.075em; }
+    color: #888888; }
   header.major {
     border-bottom-width: 1px;
     border-color: rgba(224, 224, 224, 0.75);
