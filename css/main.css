@@ -127,7 +127,7 @@ body {
     transition: none !important; }
 
 body, input, select, textarea {
-  color: #6e6e6e;
+  color: #333;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16pt;
   font-weight: 400;
@@ -952,11 +952,9 @@ html {
           margin-top: -10px; }
           .row.gtr-50.gtr-uniform > * {
             padding-top: 10px; }
-      .row {
-        margin-top: -230px;
-        margin-left: -20px; }
+      .row { }
         .row > * {
-          padding: 230px 0 0 20px; }
+          padding: 30px 0 0 20px; }
         .row.gtr-uniform {
           margin-top: -20px; }
           .row.gtr-uniform > * {
@@ -1115,7 +1113,7 @@ header {
   header p {
     position: relative;
     top: -1em;
-    color: #888888; }
+    color: #333; }
   header.major {
     border-bottom-width: 1px;
     border-color: rgba(224, 224, 224, 0.75);
@@ -1635,7 +1633,7 @@ input[type="button"],
   background-position: bottom center,					top left,				center center;
   background-repeat: repeat-x,						repeat,					no-repeat;
   background-size: 3200px 460px,					auto,					cover;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255);
   padding: 10em 0 20em 0;
   position: relative;
   text-align: center; }
@@ -1655,7 +1653,7 @@ input[type="button"],
     height: 50px; }
   #header a, #cultureheader a {
     border-bottom-color: rgba(255, 255, 255, 0.35);
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255); }
     #header a:hover, #cultureheader a:hover {
       border-bottom-color: transparent;
       color: #4eb980; }
@@ -1702,7 +1700,7 @@ input[type="button"],
   background-position: top center;
   background-repeat: repeat-x;
   background-size: 3200px 460px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255);
   /*
 			Since the SVG background occupies a lot of vertical space, we'll
 			add additional top padding (to move our content out of its way)
@@ -1888,13 +1886,13 @@ input[type="button"],
     font-size: 1em; }
   /* Section/Article */
   header p {
-    font-size: 0.8em; }
+    font-size: 1em; }
   header.major {
     margin-bottom: 2em; }
     header.major br {
       display: none; }
     header.major p {
-      font-size: 0.8em; }
+      font-size: 1em; }
   footer.major {
     margin-top: 2em; }
     footer.major br {
