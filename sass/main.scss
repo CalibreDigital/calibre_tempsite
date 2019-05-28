@@ -272,7 +272,7 @@
 		}
 
 		@include breakpoint('<=mobile') {
-			@include html-grid((20px, 230px), 'mobile');
+			@include html-grid((20px, 20px), 'mobile');
 		}
 
 		@include breakpoint('<=mobilep') {
