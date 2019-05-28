@@ -492,7 +492,7 @@
 
 		&:after {
 			@include vendor('transition', 'opacity 0.25s ease-in-out');
-			background-image: url('images/overlay.png');
+			// background-image: url('images/overlay.png');
 			content: '';
 			display: block;
 			height: 100%;
@@ -847,6 +847,7 @@
 	.feature {
 		position: relative;
 		height: 20em;
+		border-bottom: 1px solid #eee;
 
 		&:after {
 			clear: both;
@@ -863,13 +864,13 @@
 			height: 100%;
 			overflow: hidden;
 			position: relative;
-			width: 50%;
+			width: calc(50% - 1px);
 
 			img {
 				display: block;
-				min-height: 100%;
-				min-width: 100%;
-				position: absolute;
+				height: 100%;
+				margin: auto;
+				// min-width: 100%;
 			}
 		}
 
