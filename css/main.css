@@ -1319,6 +1319,13 @@ textarea {
     .image.icon:hover:after {
       opacity: 1; }
 
+    .half-width-images {
+      width: 80%;
+      margin: 0px auto 50px;
+      display: block;
+      border-radius: 2px;
+    }
+
 span.image.icon {
   cursor: default; }
 
