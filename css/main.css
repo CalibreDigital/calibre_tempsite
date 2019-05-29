@@ -1319,12 +1319,36 @@ textarea {
     .image.icon:hover:after {
       opacity: 1; }
 
+  /*Services Images*/
     .half-width-images {
       width: 80%;
       margin: 0px auto 50px;
       display: block;
       border-radius: 2px;
     }
+
+  /*Greyscale Logos*/
+  .greyscaleLogoRow {
+    max-width: 51em;
+    width: 100%;
+    margin: -5em auto 0;
+  }
+  @media screen and (max-width: 1280px) { 
+    .greyscaleLogoRow {
+      margin-top: -4em;
+    }
+  }
+  @media screen and (max-width: 736px) { 
+    .greyscaleLogoRow {
+      margin-top: -2em;
+    }
+  }
+  .greyscaleLogoRow > div {
+    padding: 3px;
+  } 
+  .greyscaleLogoImg {
+    width: 100%;
+  }
 
 span.image.icon {
   cursor: default; }
