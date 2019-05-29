@@ -5,7 +5,8 @@
   "author": "Jerome Minney <jerome@calibre.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "./node_modules/.bin/gulp"
+    "start": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp sass"
   },
   "devDependencies": {
     "browser-sync": "^2.26.5",
