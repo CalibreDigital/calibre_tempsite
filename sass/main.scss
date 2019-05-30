@@ -492,7 +492,7 @@
 
 		&:after {
 			@include vendor('transition', 'opacity 0.25s ease-in-out');
-			background-image: url('images/overlay.png');
+			// background-image: url('images/overlay.png');
 			content: '';
 			display: block;
 			height: 100%;
@@ -558,6 +558,32 @@
 
 	span.image.icon {
 		cursor: default;
+	}
+
+	// Services Images
+	.half-width-images {
+		width: 80%;
+		margin: 0px auto 50px;
+		display: block;
+		border-radius: 2px;
+	}
+
+
+	// Greyscale Logos
+	.greyscaleLogoRow {
+		max-width: 51em;
+		width: 100%;
+		margin: -5em auto 0;
+
+		@include breakpoint('<=mobile') {
+			margin-top: -2em;
+		}
+	}
+	.greyscaleLogoRow > div {
+		padding: 3px;
+	}	
+	.greyscaleLogoImg {
+		width: 100%;
 	}
 
 /* Icon */
@@ -847,6 +873,7 @@
 	.feature {
 		position: relative;
 		height: 20em;
+		border-bottom: 1px solid #eee;
 
 		&:after {
 			clear: both;
@@ -863,13 +890,13 @@
 			height: 100%;
 			overflow: hidden;
 			position: relative;
-			width: 50%;
+			width: calc(50% - 1px);
 
 			img {
 				display: block;
-				min-height: 100%;
-				min-width: 100%;
-				position: absolute;
+				height: 100%;
+				margin: auto;
+				// min-width: 100%;
 			}
 		}
 
