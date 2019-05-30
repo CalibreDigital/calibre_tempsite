@@ -2033,5 +2033,5 @@ input[type="button"],
   #header {
     padding-left: 2em;
     padding-right: 2em; }
-    #header br {
-      display: none; } }
+    /*#header br {
+      display: none; }*/ }
