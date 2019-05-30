@@ -146,7 +146,7 @@ a {
 
 strong, b {
   font-weight: 600;
-  color: #5b5b5b; }
+  color: #555; }
 
 em, i {
   font-style: italic; }
@@ -155,7 +155,7 @@ p, ul, ol, dl, table, blockquote, form {
   margin: 0 0 1em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #5b5b5b;
+  color: #555;
   font-weight: 700;
   letter-spacing: 0.125em;
   line-height: 1.75em;
@@ -935,46 +935,44 @@ html {
           .row.gtr-0.gtr-uniform > * {
             padding-top: 0px; }
       .row.gtr-25 {
-        margin-top: -5px;
+        margin-top: -57.5px;
         margin-left: -5px; }
         .row.gtr-25 > * {
-          padding: 5px 0 0 5px; }
+          padding: 57.5px 0 0 5px; }
         .row.gtr-25.gtr-uniform {
           margin-top: -5px; }
           .row.gtr-25.gtr-uniform > * {
             padding-top: 5px; }
       .row.gtr-50 {
-        margin-top: -10px;
+        margin-top: -115px;
         margin-left: -10px; }
         .row.gtr-50 > * {
-          padding: 10px 0 0 10px; }
+          padding: 115px 0 0 10px; }
         .row.gtr-50.gtr-uniform {
           margin-top: -10px; }
           .row.gtr-50.gtr-uniform > * {
             padding-top: 10px; }
-      .row {
-        margin-top: -20px;
-        margin-left: -20px; }
+      .row { }
         .row > * {
-          padding: 20px 0 0 20px; }
+          padding: 30px 0 0 20px; }
         .row.gtr-uniform {
           margin-top: -20px; }
           .row.gtr-uniform > * {
             padding-top: 20px; }
       .row.gtr-150 {
-        margin-top: -30px;
+        margin-top: -345px;
         margin-left: -30px; }
         .row.gtr-150 > * {
-          padding: 30px 0 0 30px; }
+          padding: 345px 0 0 30px; }
         .row.gtr-150.gtr-uniform {
           margin-top: -30px; }
           .row.gtr-150.gtr-uniform > * {
             padding-top: 30px; }
       .row.gtr-200 {
-        margin-top: -40px;
+        margin-top: -460px;
         margin-left: -40px; }
         .row.gtr-200 > * {
-          padding: 40px 0 0 40px; }
+          padding: 460px 0 0 40px; }
         .row.gtr-200.gtr-uniform {
           margin-top: -40px; }
           .row.gtr-200.gtr-uniform > * {
@@ -1667,7 +1665,7 @@ input[type="button"],
   background-position: bottom center,					top left,				center center;
   background-repeat: repeat-x,						repeat,					no-repeat;
   background-size: 3200px 460px,					auto,					cover;
-  color: white;
+  color: rgba(255, 255, 255);
   padding: 10em 0 20em 0;
   position: relative;
   text-align: center; }
@@ -1687,7 +1685,7 @@ input[type="button"],
     height: 50px; }
   #header a, #cultureheader a {
     border-bottom-color: rgba(255, 255, 255, 0.35);
-    color: white; }
+    color: rgba(255, 255, 255); }
     #header a:hover, #cultureheader a:hover {
       border-bottom-color: transparent;
       color: #4eb980; }
@@ -1734,7 +1732,7 @@ input[type="button"],
   background-position: top center;
   background-repeat: repeat-x;
   background-size: 3200px 460px;
-  color: white;
+  color: rgba(255, 255, 255);
   /*
 			Since the SVG background occupies a lot of vertical space, we'll
 			add additional top padding (to move our content out of its way)
@@ -1781,7 +1779,7 @@ input[type="button"],
   #footer textarea:focus {
     border-color: #ffffff; }
   #footer .formerize-placeholder {
-    color: rgba(255, 255, 255, 0.5) !important; }
+    color: rgba(255, 255, 255, 0.3) !important; }
   #footer form {
     margin: 3em 0; }
   #footer .copyright {
@@ -1920,13 +1918,13 @@ input[type="button"],
     font-size: 1em; }
   /* Section/Article */
   header p {
-    font-size: 0.8em; }
+    font-size: 1em; }
   header.major {
     margin-bottom: 2em; }
     header.major br {
       display: none; }
     header.major p {
-      font-size: 0.8em; }
+      font-size: 1em; }
   footer.major {
     margin-top: 2em; }
     footer.major br {
