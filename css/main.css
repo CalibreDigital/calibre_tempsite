@@ -1265,20 +1265,6 @@ textarea {
   border: 0;
   display: inline-block;
   position: relative; }
-  /*.image:after {
-    -moz-transition: opacity 0.25s ease-in-out;
-    -webkit-transition: opacity 0.25s ease-in-out;
-    -ms-transition: opacity 0.25s ease-in-out;
-    transition: opacity 0.25s ease-in-out;
-    background-image: url("images/overlay.png");
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    opacity: 0.2;
-    position: absolute;
-    top: 0;
-    width: 100%; }*/
   .image img {
     display: block; }
   .image.fit {
@@ -1321,39 +1307,33 @@ textarea {
     .image.icon:hover:after {
       opacity: 1; }
 
-  /*Services Images*/
-    .half-width-images {
-      width: 80%;
-      margin: 0px auto 50px;
-      display: block;
-      border-radius: 2px;
-    }
-
-  /*Greyscale Logos*/
-  .greyscaleLogoRow {
-    max-width: 51em;
-    width: 100%;
-    margin: -5em auto 0;
-  }
-  @media screen and (max-width: 1280px) { 
-    .greyscaleLogoRow {
-      margin-top: -4em;
-    }
-  }
-  @media screen and (max-width: 736px) { 
-    .greyscaleLogoRow {
-      margin-top: -2em;
-    }
-  }
-  .greyscaleLogoRow > div {
-    padding: 3px;
-  } 
-  .greyscaleLogoImg {
-    width: 100%;
-  }
-
 span.image.icon {
   cursor: default; }
+
+/* Services Images */
+.half-width-images {
+  width: 80%;
+  margin: 0px auto 50px;
+  display: block;
+  border-radius: 2px; }
+
+/* Greyscale Logos */
+.greyscaleLogoRow {
+  max-width: 51em;
+  width: 100%;
+  margin: -5em auto 0; }
+  @media screen and (max-width: 1280px) {
+    .greyscaleLogoRow {
+      margin-top: -4em; } }
+  @media screen and (max-width: 736px) {
+    .greyscaleLogoRow {
+      margin-top: -2em; } }
+
+.greyscaleLogoRow > div {
+  padding: 3px; }
+
+.greyscaleLogoImg {
+  width: 100%; }
 
 /* Icon */
 .icon {
@@ -1619,8 +1599,13 @@ input[type="button"],
     .feature .image img {
       display: block;
       height: 100%;
-      margin: auto;
-      /*position: absolute;*/ }
+      margin: auto; }
+    @media screen and (max-width: 480px) {
+      .feature .image {
+        height: auto; }
+        .feature .image img {
+          width: 100%;
+          height: auto; } }
   .feature:before {
     background: blue;
     content: '';
@@ -1954,15 +1939,6 @@ input[type="button"],
       padding: 2em !important;
       text-align: center;
       width: 100%; }
-    @media screen and (max-width: 481px) { 
-      .feature .image {
-        height: auto;
-      }
-      .feature .image img {
-        width: 100%;
-        height: auto;
-      }
-    }
   /* Header */
   #header {
     background-image: url("images/top-1280.svg"), url("images/overlay.png"), url("../../images/header.jpg");
@@ -2034,6 +2010,4 @@ input[type="button"],
   /* Header */
   #header {
     padding-left: 2em;
-    padding-right: 2em; }
-    /*#header br {
-      display: none; }*/ }
+    padding-right: 2em; } }
