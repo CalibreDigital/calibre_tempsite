@@ -10,7 +10,7 @@ gulp.task('sass', function (done) {
 })
 
 gulp.task('watch:sass', function (done) {
-  gulp.watch("sass/*.scss", gulp.series('sass'))
+  gulp.watch("sass/**/*.scss", gulp.series('sass'))
 });
 
 gulp.task('browser-sync', function(done) {  
