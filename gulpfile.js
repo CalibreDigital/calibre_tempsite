@@ -14,7 +14,7 @@ gulp.task('watch:sass', function (done) {
 });
 
 gulp.task('browser-sync', function(done) {  
-  browserSync.init(["css/*.css", "js/*.js"], {
+  browserSync.init(["css/*.css", "js/*.js", "*.html"], {
     server: {
       baseDir: "./"
     }
