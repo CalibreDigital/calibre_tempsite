@@ -5,6 +5,7 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import 'libs/header';
+@import 'scopedscss/casestudies';
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
 
@@ -221,11 +222,18 @@
 			width: (51em * 0.75);
 		}
 
+		&.small {
+			width: (51em * 0.5);
+		}
+
 		@include breakpoint('<=normal') {
 			width: 48em;
 
 			&.medium {
 				width: (48em * 0.75);
+			}
+			&.small {
+				width: (48em * 0.5);
 			}
 		}
 
@@ -234,6 +242,9 @@
 
 			&.medium {
 				width: (95% * 0.75);
+			}
+			&.small {
+				width: (95% * 0.5);
 			}
 		}
 

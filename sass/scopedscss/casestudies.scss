@@ -1,0 +1,88 @@
+// Breakpoints.
+
+	@include breakpoints((
+		wide:      ( 1281px,  1680px ),
+		normal:    ( 981px,   1280px ),
+		narrow:    ( 841px,   980px  ),
+		narrower:  ( 737px,   840px  ),
+		mobile:    ( 481px,   736px  ),
+		mobilep:   ( null,    480px  )
+	));
+
+.two-thirds-width {
+	flex-grow: 2;
+}
+
+
+// Case study page styling
+
+.page-casestudy-styling {
+
+	#main:before {
+		display: none;
+	}
+
+	.left { text-align: left; }
+	.right { text-align: right; }
+	.center { text-align: center; }
+	#main > .container { margin-bottom: 5em; }
+
+	#header {
+		padding: 6em 0 11em 0;
+		background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-subutai/header.jpg);
+		@include breakpoint('<=normal') {
+			padding-bottom: 8em;
+		}
+		@include breakpoint('<=mobile') {
+			padding-top: 10em;
+		}
+	}
+
+	.cs-box-row {
+		flex-wrap: nowrap;
+		p {
+			margin-bottom: 0;
+		}
+		@include breakpoint('<=mobile') {
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.testimonialquote{
+			position: relative;
+			&:before {
+			    content: url(../images/quotationmark.svg);
+			    position: absolute;
+			    top: 10px;
+			    left: -10px;
+			}
+			&:after {
+			    content: url(../images/quotationmarkend.svg);
+			    position: absolute;
+			    bottom: 30px;
+			    right: -10px;
+			}
+			
+		}
+	}
+
+	.testimonialface {
+		width: 150px;
+		height: 150px;
+		border-radius: 75px;
+	}
+
+	.challengeheader {
+		font-weight: 700;
+	}
+
+	.calibretip {
+		// width: 40%;
+		&> img {
+			width: 200px;
+		}
+	}
+
+
+}
