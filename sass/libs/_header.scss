@@ -5,7 +5,7 @@
 	left: 0;
 	right: 0;
 	padding: 18px 0;
-
+	background-color: _palette(accent1, bg);
 	
 	&__container {
 		position: relative;
@@ -28,7 +28,7 @@
 	&__nav { 
 		transition: right .2s ease-out;
 		width: 650px;
-    margin: auto;
+    	margin: auto;
 	}
 
 	&__nav-list {

@@ -6,7 +6,8 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 18px 0; }
+  padding: 18px 0;
+  background-color: #484D5A; }
   .header__container {
     position: relative;
     display: flex;
@@ -43,6 +44,67 @@
       padding: 10px 10px 6px 10px;
       border-bottom: none;
       color: white; }
+
+.two-thirds-width {
+  flex-grow: 2; }
+
+.page-casestudy-styling #main:before {
+  display: none; }
+
+.page-casestudy-styling .left {
+  text-align: left; }
+
+.page-casestudy-styling .right {
+  text-align: right; }
+
+.page-casestudy-styling .center {
+  text-align: center; }
+
+.page-casestudy-styling #main > .container {
+  margin-bottom: 5em; }
+
+.page-casestudy-styling #header {
+  padding: 6em 0 11em 0;
+  background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-subutai/header.jpg); }
+  @media screen and (max-width: 1280px) {
+    .page-casestudy-styling #header {
+      padding-bottom: 8em; } }
+  @media screen and (max-width: 736px) {
+    .page-casestudy-styling #header {
+      padding-top: 10em; } }
+
+.page-casestudy-styling .cs-box-row {
+  flex-wrap: nowrap; }
+  .page-casestudy-styling .cs-box-row p {
+    margin-bottom: 0; }
+  @media screen and (max-width: 736px) {
+    .page-casestudy-styling .cs-box-row {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center; } }
+  .page-casestudy-styling .cs-box-row .testimonialquote {
+    position: relative; }
+    .page-casestudy-styling .cs-box-row .testimonialquote:before {
+      content: url(../images/quotationmark.svg);
+      position: absolute;
+      top: 10px;
+      left: -10px; }
+    .page-casestudy-styling .cs-box-row .testimonialquote:after {
+      content: url(../images/quotationmarkend.svg);
+      position: absolute;
+      bottom: 30px;
+      right: -10px; }
+
+.page-casestudy-styling .testimonialface {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px; }
+
+.page-casestudy-styling .challengeheader {
+  font-weight: 700; }
+
+.page-casestudy-styling .calibretip > img {
+  width: 200px; }
 
 /*
 	Directive by HTML5 UP
@@ -139,7 +201,7 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #4eb980;
+  color: #484D5A;
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent; }
@@ -203,16 +265,22 @@ html {
   width: 51em; }
   .container.medium {
     width: 38.25em; }
+  .container.small {
+    width: 25.5em; }
   @media screen and (max-width: 1280px) {
     .container {
       width: 48em; }
       .container.medium {
-        width: 36em; } }
+        width: 36em; }
+      .container.small {
+        width: 24em; } }
   @media screen and (max-width: 980px) {
     .container {
       width: 95%; }
       .container.medium {
-        width: 71.25%; } }
+        width: 71.25%; }
+      .container.small {
+        width: 47.5%; } }
   @media screen and (max-width: 840px) {
     .container {
       width: 95% !important; } }
@@ -1217,7 +1285,7 @@ textarea {
   select:focus,
   textarea:focus {
     background: rgba(224, 224, 224, 0.15);
-    border-color: #4eb980; }
+    border-color: #484D5A; }
 
 input[type="text"],
 input[type="password"],
@@ -1583,7 +1651,7 @@ input[type="button"],
 .feature {
   position: relative;
   height: 20em;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid rgba(224, 224, 224, 0.75); }
   .feature:after {
     clear: both;
     content: '';
@@ -1675,7 +1743,7 @@ input[type="button"],
     color: white; }
     #header a:hover, #cultureheader a:hover {
       border-bottom-color: transparent;
-      color: #4eb980; }
+      color: #484D5A; }
   #header strong, #header b, #cultureheader strong, #cultureheader b {
     color: #ffffff; }
   #header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #cultureheader h1, #cultureheader h2, #cultureheader h3, #cultureheader h4, #cultureheader h5, #cultureheader h6 {
@@ -1690,7 +1758,7 @@ input[type="button"],
     background: #ffffff;
     color: #544d55; }
   #header .logo, #cultureheader .logo {
-    background: #4eb980;
+    background: #484D5A;
     border-radius: 100%;
     color: #ffffff;
     cursor: default;
@@ -1714,7 +1782,7 @@ input[type="button"],
 /* Footer */
 #footer {
   background-attachment: scroll;
-  background-color: #4eb980;
+  background-color: #484D5A;
   background-image: url("images/bottom-3200.svg");
   background-position: top center;
   background-repeat: repeat-x;
@@ -1752,7 +1820,7 @@ input[type="button"],
   #footer .button {
     background: #ffffff;
     box-shadow: inset 0 0 0 1px #ffffff;
-    color: #4eb980; }
+    color: #484D5A; }
     #footer input[type="submit"]:hover,
     #footer input[type="reset"]:hover,
     #footer input[type="button"]:hover,
