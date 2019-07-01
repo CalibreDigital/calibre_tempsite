@@ -73,6 +73,9 @@
     .page-casestudy-styling #header {
       padding-top: 10em; } }
 
+.page-casestudy-styling .nuccoheader {
+  background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-nucco/nucco-header.png) !important; }
+
 .page-casestudy-styling .cs-box-row {
   flex-wrap: nowrap; }
   .page-casestudy-styling .cs-box-row p {
@@ -132,6 +135,9 @@
 
 .page-casestudy-styling img.container {
   margin-top: 2em; }
+
+.page-casestudy-styling #footer:before {
+  content: none; }
 
 /*
 	Directive by HTML5 UP

@@ -37,6 +37,9 @@
 			padding-top: 10em;
 		}
 	}
+	.nuccoheader {
+		background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-nucco/nucco-header.png) !important;
+	}
 
 	.cs-box-row {
 		flex-wrap: nowrap;
@@ -116,5 +119,7 @@
 	  	margin-top: 2em;
 	  }
 	
-
+	#footer:before {
+		content: none;
+	}
 }
