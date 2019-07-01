@@ -64,11 +64,11 @@
   margin-bottom: 5em; }
 
 .page-casestudy-styling #header {
-  padding: 6em 0 11em 0;
+  padding: 6em 0 14em 0;
   background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-subutai/header.jpg); }
   @media screen and (max-width: 1280px) {
     .page-casestudy-styling #header {
-      padding-bottom: 8em; } }
+      padding-bottom: 12em; } }
   @media screen and (max-width: 736px) {
     .page-casestudy-styling #header {
       padding-top: 10em; } }
@@ -93,7 +93,7 @@
       content: url(../images/quotationmarkend.svg);
       position: absolute;
       bottom: 30px;
-      right: -10px; }
+      right: -20px; }
 
 .page-casestudy-styling .testimonialface {
   width: 150px;
@@ -105,6 +105,33 @@
 
 .page-casestudy-styling .calibretip > img {
   width: 200px; }
+
+.page-casestudy-styling .fa-chevron-down {
+  font-size: 50px;
+  color: #484D5A; }
+
+.page-casestudy-styling .js-Accordion {
+  margin: 0 auto;
+  background-color: white; }
+
+.page-casestudy-styling .js-Accordion-title {
+  background-color: white;
+  margin: 18px auto;
+  width: 60px;
+  height: 40px;
+  display: block;
+  transition: 300ms ease all; }
+
+.page-casestudy-styling .js-Accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: all .6s ease; }
+
+.page-casestudy-styling .rotated {
+  transform: rotate(180deg); }
+
+.page-casestudy-styling img.container {
+  margin-top: 2em; }
 
 /*
 	Directive by HTML5 UP
