@@ -1,0 +1,16 @@
+{
+  "name": "calibre_tempsite",
+  "version": "0.0.1",
+  "repository": "git@github.com:CalibreDigital/calibre_tempsite.git",
+  "author": "Jerome Minney <jerome@calibre.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp sass"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
