@@ -992,8 +992,8 @@
 	.cultureheaderimg {
 		background-image:			url('images/top-3200.svg'),		url('images/overlay.png'),		url('../images/family.jpg') !important;
 	}
-	#header, #cultureheader {
-		background-attachment:		scroll,							scroll,					fixed;
+	#header {
+		background-attachment:		scroll,							scroll,					scroll;
 		background-image:			url('images/top-3200.svg'),		url('images/overlay.png'),		url('../images/header.jpg');
 		background-position:		bottom center,					top left,				center center;
 		background-repeat:			repeat-x,						repeat,					no-repeat;

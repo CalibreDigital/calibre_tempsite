@@ -61,7 +61,8 @@
   text-align: center; }
 
 .page-casestudy-styling #main > .container {
-  margin-bottom: 5em; }
+  margin-bottom: 5em;
+  position: relative; }
 
 .page-casestudy-styling #header {
   padding: 6em 0 14em 0;
@@ -76,6 +77,15 @@
 .page-casestudy-styling .nuccoheader {
   background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-nucco/nucco-header.png) !important; }
 
+.page-casestudy-styling .greytitles {
+  position: absolute;
+  width: 100%;
+  margin: -25px auto;
+  opacity: 0.2;
+  font-size: 4em;
+  line-height: 1em;
+  top: 0; }
+
 .page-casestudy-styling .cs-box-row {
   flex-wrap: nowrap; }
   .page-casestudy-styling .cs-box-row p {
@@ -88,15 +98,25 @@
   .page-casestudy-styling .cs-box-row .testimonialquote {
     position: relative; }
     .page-casestudy-styling .cs-box-row .testimonialquote:before {
-      content: url(../images/quotationmark.svg);
+      content: '';
       position: absolute;
-      top: 10px;
-      left: -10px; }
+      top: 1em;
+      left: -5px;
+      opacity: 0.2;
+      background: url(../images/quote-open.svg) center no-repeat;
+      background-size: 2em;
+      width: 2em;
+      height: 2em; }
     .page-casestudy-styling .cs-box-row .testimonialquote:after {
-      content: url(../images/quotationmarkend.svg);
+      content: '';
       position: absolute;
-      bottom: 30px;
-      right: -20px; }
+      bottom: 3em;
+      right: -20px;
+      opacity: 0.2;
+      background: url(../images/quote-closed.svg) center no-repeat;
+      background-size: 2em;
+      width: 2em;
+      height: 2em; }
 
 .page-casestudy-styling .testimonialface {
   width: 150px;
@@ -112,6 +132,10 @@
 .page-casestudy-styling .fa-chevron-down {
   font-size: 50px;
   color: #484D5A; }
+
+.page-casestudy-styling .circleplus {
+  width: 30px;
+  height: 30px; }
 
 .page-casestudy-styling .js-Accordion {
   margin: 0 auto;
@@ -131,7 +155,7 @@
   transition: all .6s ease; }
 
 .page-casestudy-styling .rotated {
-  transform: rotate(180deg); }
+  transform: rotate(135deg); }
 
 .page-casestudy-styling img.container {
   margin-top: 2em; }
@@ -1747,8 +1771,8 @@ input[type="button"],
 .cultureheaderimg {
   background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../images/family.jpg") !important; }
 
-#header, #cultureheader {
-  background-attachment: scroll,							scroll,					fixed;
+#header {
+  background-attachment: scroll,							scroll,					scroll;
   background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../images/header.jpg");
   background-position: bottom center,					top left,				center center;
   background-repeat: repeat-x,						repeat,					no-repeat;
@@ -1757,40 +1781,37 @@ input[type="button"],
   padding: 10em 0 20em 0;
   position: relative;
   text-align: center; }
-  #header:before, #header:after, #cultureheader:before, #cultureheader:after {
+  #header:before, #header:after {
     background: rgba(224, 224, 224, 0.75);
     content: '';
     left: 50%;
     position: absolute;
     width: 1px;
     z-index: 0; }
-  #header:before, #cultureheader:before {
+  #header:before {
     height: calc(100% - 50px);
     opacity: 0.15;
     top: 0; }
-  #header:after, #cultureheader:after {
+  #header:after {
     bottom: 0;
     height: 50px; }
-  #header a, #cultureheader a {
+  #header a {
     border-bottom-color: rgba(255, 255, 255, 0.35);
     color: white; }
-    #header a:hover, #cultureheader a:hover {
+    #header a:hover {
       border-bottom-color: transparent;
       color: #484D5A; }
-  #header strong, #header b, #cultureheader strong, #cultureheader b {
+  #header strong, #header b {
     color: #ffffff; }
-  #header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #cultureheader h1, #cultureheader h2, #cultureheader h3, #cultureheader h4, #cultureheader h5, #cultureheader h6 {
+  #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
     color: #ffffff; }
   #header input[type="submit"],
   #header input[type="reset"],
   #header input[type="button"],
-  #header .button, #cultureheader input[type="submit"],
-  #cultureheader input[type="reset"],
-  #cultureheader input[type="button"],
-  #cultureheader .button {
+  #header .button {
     background: #ffffff;
     color: #544d55; }
-  #header .logo, #cultureheader .logo {
+  #header .logo {
     background: #484D5A;
     border-radius: 100%;
     color: #ffffff;
@@ -1802,13 +1823,13 @@ input[type="button"],
     margin: 0 0 0.75em 0;
     text-align: center;
     width: 2.35em; }
-    #header .logo.fa-paper-plane-o:before, #cultureheader .logo.fa-paper-plane-o:before {
+    #header .logo.fa-paper-plane-o:before {
       left: -0.075em;
       position: relative; }
-  #header h1, #cultureheader h1 {
+  #header h1 {
     font-size: 2.5em;
     margin: 0; }
-  #header p, #cultureheader p {
+  #header p {
     line-height: 1.5em;
     margin: 0.25em 0 0 0; }
 

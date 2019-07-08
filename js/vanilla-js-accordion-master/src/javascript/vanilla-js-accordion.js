@@ -30,7 +30,7 @@ var Accordion = function(options) {
      */
     function render() {
         // attach classes to buttons and containers
-        [].forEach.call(element.querySelectorAll('#button_chevron'),
+        [].forEach.call(element.querySelectorAll('#expandicon'),
             function(item) {
                 item.classList.add(titleClass);
                 item.nextElementSibling.classList.add(contentClass);
