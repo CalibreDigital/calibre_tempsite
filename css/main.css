@@ -129,39 +129,35 @@
 .page-casestudy-styling .calibretip > img {
   width: 200px; }
 
-.page-casestudy-styling .fa-chevron-down {
-  font-size: 50px;
-  color: #484D5A; }
-
-.page-casestudy-styling .circleplus {
-  width: 30px;
-  height: 30px; }
-
-.page-casestudy-styling .js-Accordion {
-  margin: 0 auto;
-  background-color: white; }
-
-.page-casestudy-styling .js-Accordion-title {
-  background-color: white;
-  margin: 18px auto;
-  width: 60px;
-  height: 40px;
-  display: block;
-  transition: 300ms ease all; }
-
-.page-casestudy-styling .js-Accordion-content {
-  height: 0;
-  overflow: hidden;
-  transition: all .6s ease; }
-
-.page-casestudy-styling .rotated {
-  transform: rotate(135deg); }
-
 .page-casestudy-styling img.container {
   margin-top: 2em; }
 
 .page-casestudy-styling #footer:before {
   content: none; }
+
+.two-thirds-width {
+  flex-grow: 2; }
+
+.js-Accordion {
+  margin: 0 auto;
+  background-color: white; }
+
+.js-Accordion-title {
+  transition: 300ms ease all; }
+
+.js-Accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: all .6s ease; }
+
+.challenge-cta {
+  text-decoration: underline; }
+
+#collapsemessage {
+  width: 100%;
+  text-align: center;
+  display: none;
+  z-index: -1; }
 
 /*
 	Directive by HTML5 UP

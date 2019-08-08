@@ -1,10 +1,17 @@
 # calibre_tempsite
 Temporary website for Calibre Digital
 
+## Development
 
-$ yarn build
-$ git diff
+First update yarn with the command:
+`yarn install`
 
+To develop locally, just type:
+`yarn start`
+
+To build the site for deployment, you can use:
+`yarn build`
+But currently this is done automatically, within Netlify
 
 
 

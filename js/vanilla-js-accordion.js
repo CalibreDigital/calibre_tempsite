@@ -30,7 +30,7 @@ var Accordion = function(options) {
      */
     function render() {
         // attach classes to buttons and containers
-        [].forEach.call(element.querySelectorAll('#expandicon'),
+        [].forEach.call(element.querySelectorAll('#expandtrigger'),
             function(item) {
                 item.classList.add(titleClass);
                 item.nextElementSibling.classList.add(contentClass);
@@ -62,7 +62,7 @@ var Accordion = function(options) {
             closeAll();
         }
 
-        toggle(e.target.nextElementSibling);
+        toggle(e.target);
     }
 
     /**
@@ -80,16 +80,16 @@ var Accordion = function(options) {
      * @param {object} el - The content tab to show or hide.
      */
     function toggle(el) {
-        // getting the height every time in case
-        // the content was updated dynamically
-        var height = el.scrollHeight;
 
-        if (el.style.height === '0px' || el.style.height === '') {
-            el.style.height = height + 'px';
-            el.previousElementSibling.classList.add('rotated');
+        // get the content, in order to expand it
+        content = el.nextElementSibling
+        // getting the height every time in case the content was updated dynamically
+        var height = content.scrollHeight;
+
+        if (content.style.height === '0px' || content.style.height === '') {
+            content.style.height = height + 'px';
         } else {
-            el.style.height = 0;
-            el.previousElementSibling.classList.remove('rotated');
+            content.style.height = 0;
         }
     }
 
