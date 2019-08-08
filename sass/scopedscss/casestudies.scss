@@ -49,6 +49,13 @@
 	    font-size: 4em;
 	    line-height: 1em;
 	    top: 0;
+	    @include breakpoint('<=mobile') {
+			font-size: 3em;
+		}
+		@include breakpoint('<=mobilep') {
+			font-size: 2.5em;
+			margin: -15px auto;
+		}
 	}
 
 	.cs-box-row {
