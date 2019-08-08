@@ -88,8 +88,20 @@ var Accordion = function(options) {
 
         if (content.style.height === '0px' || content.style.height === '') {
             content.style.height = height + 'px';
+            el.dataset.titlecache = el.innerHTML;
+            el.style.opacity = "0";
+            setTimeout(function(){ 
+                el.innerHTML = "Collapse this section and continue reading"; 
+                el.style.opacity = "1";
+            }, 600);
+            
         } else {
             content.style.height = 0;
+            el.style.opacity = "0";
+            setTimeout(function(){ 
+                el.innerHTML = el.dataset.titlecache;
+                el.style.opacity = "1";
+            }, 600);
         }
     }
 

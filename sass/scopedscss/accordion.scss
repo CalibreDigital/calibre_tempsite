@@ -20,9 +20,9 @@
 	  margin: 0 auto;
 	  background-color: white;
 	}
-	.js-Accordion-title {
-	  transition: 300ms ease all;
-	}
+	// .js-Accordion-title {
+	//   transition: 300ms ease all;
+	// }
 	.js-Accordion-content {
 	  height: 0;
 	  overflow: hidden;
@@ -30,11 +30,5 @@
 	}
 	.challenge-cta {
 		text-decoration: underline;
-	}
-	#collapsemessage {
-		// position: absolute;
-		width: 100%;
-		text-align: center;
-		display: none;
-		z-index: -1;
+		transition: .6s ease;
 	}

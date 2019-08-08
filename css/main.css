@@ -142,22 +142,14 @@
   margin: 0 auto;
   background-color: white; }
 
-.js-Accordion-title {
-  transition: 300ms ease all; }
-
 .js-Accordion-content {
   height: 0;
   overflow: hidden;
   transition: all .6s ease; }
 
 .challenge-cta {
-  text-decoration: underline; }
-
-#collapsemessage {
-  width: 100%;
-  text-align: center;
-  display: none;
-  z-index: -1; }
+  text-decoration: underline;
+  transition: .6s ease; }
 
 /*
 	Directive by HTML5 UP
