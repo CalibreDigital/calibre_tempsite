@@ -65,15 +65,27 @@
   position: relative; }
 
 .page-casestudy-styling #header {
-  padding: 6em 0 14em 0;
-  background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-subutai/header.jpg); }
-  @media screen and (max-width: 1280px) {
+  padding: 6em 0 0 0;
+  height: 50vh;
+  background-image: url(images/top-1600.svg), url(images/overlay.png); }
+  /*@media screen and (max-width: 1280px) {
     .page-casestudy-styling #header {
       padding-bottom: 12em; } }
   @media screen and (max-width: 736px) {
     .page-casestudy-styling #header {
-      padding-top: 10em; } }
-
+      padding-top: 10em; } }*/ 
+.casestudy_headervideo {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  object-fit: cover;
+  object-position: 0 0;
+  z-index: -1;
+  height: calc(50vh - 65px);
+}
+.videostyling {
+  width: 100%;
+}
 .page-casestudy-styling .nuccoheader {
   background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-nucco/nucco-header.png) !important; }
 
