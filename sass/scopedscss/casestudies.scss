@@ -1,0 +1,125 @@
+// Breakpoints.
+
+	@include breakpoints((
+		wide:      ( 1281px,  1680px ),
+		normal:    ( 981px,   1280px ),
+		narrow:    ( 841px,   980px  ),
+		narrower:  ( 737px,   840px  ),
+		mobile:    ( 481px,   736px  ),
+		mobilep:   ( null,    480px  )
+	));
+
+.two-thirds-width {
+	flex-grow: 2;
+}
+
+
+// Case study page styling
+
+.page-casestudy-styling {
+
+	#main:before {
+		display: none;
+	}
+
+	.left { text-align: left; }
+	.right { text-align: right; }
+	.center { text-align: center; }
+	#main > .container { margin-bottom: 5em; position: relative; }
+
+	#header {
+		padding: 6em 0 14em 0;
+		background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-subutai/header.jpg);
+		@include breakpoint('<=normal') {
+			padding-bottom: 12em;
+		}
+		@include breakpoint('<=mobile') {
+			padding-top: 10em;
+		}
+	}
+	.nuccoheader {
+		background-image: url(images/top-1600.svg), url(images/overlay.png), url(../images/casestudies-nucco/nucco-header.png) !important;
+	}
+
+	.greytitles {
+	    position: absolute;
+	    width: 100%;
+	    margin: -25px auto;
+	    opacity: 0.2;
+	    font-size: 4em;
+	    line-height: 1em;
+	    top: 0;
+	    @include breakpoint('<=mobile') {
+			font-size: 3em;
+		}
+		@include breakpoint('<=mobilep') {
+			font-size: 2.5em;
+			margin: -15px auto;
+		}
+	}
+
+	.cs-box-row {
+		flex-wrap: nowrap;
+		p {
+			margin-bottom: 0;
+		}
+		@include breakpoint('<=mobile') {
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.testimonialquote{
+			position: relative;
+			&:before {
+			    content: '';
+			    position: absolute;
+			    top: 1em;
+			    left: -5px;
+			    opacity: 0.2;
+			    background: url(../images/quote-open.svg) center no-repeat;
+			    background-size: 2em;
+			    width: 2em;
+			    height: 2em;
+			}
+			&:after {
+			    content: '';
+			    position: absolute;
+			    bottom: 3em;
+			    right: -20px;
+			    opacity: 0.2;
+			    background: url(../images/quote-closed.svg) center no-repeat;
+			    background-size: 2em;
+			    width: 2em;
+			    height: 2em;
+
+			}
+			
+		}
+	}
+
+	.testimonialface {
+		width: 150px;
+		height: 150px;
+		border-radius: 75px;
+	}
+
+	.challengeheader {
+		font-weight: 700;
+	}
+
+	.calibretip {
+		// width: 40%;
+		&> img {
+			width: 200px;
+		}
+	}
+	
+	img.container {
+	  	margin-top: 2em;
+	  }
+	
+	#footer:before {
+		content: none;
+	}
+}

@@ -1,0 +1,34 @@
+// Breakpoints.
+
+	@include breakpoints((
+		wide:      ( 1281px,  1680px ),
+		normal:    ( 981px,   1280px ),
+		narrow:    ( 841px,   980px  ),
+		narrower:  ( 737px,   840px  ),
+		mobile:    ( 481px,   736px  ),
+		mobilep:   ( null,    480px  )
+	));
+
+.two-thirds-width {
+	flex-grow: 2;
+}
+
+
+// Accordion styling
+
+	.js-Accordion {
+	  margin: 0 auto;
+	  background-color: white;
+	}
+	// .js-Accordion-title {
+	//   transition: 300ms ease all;
+	// }
+	.js-Accordion-content {
+	  height: 0;
+	  overflow: hidden;
+	  transition: all .6s ease;
+	}
+	.challenge-cta {
+		text-decoration: underline;
+		transition: .6s ease;
+	}

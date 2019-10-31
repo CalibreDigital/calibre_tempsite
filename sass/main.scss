@@ -5,6 +5,8 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import 'libs/header';
+@import 'scopedscss/casestudies';
+@import 'scopedscss/accordion';
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
 
@@ -221,11 +223,18 @@
 			width: (51em * 0.75);
 		}
 
+		&.small {
+			width: (51em * 0.5);
+		}
+
 		@include breakpoint('<=normal') {
 			width: 48em;
 
 			&.medium {
 				width: (48em * 0.75);
+			}
+			&.small {
+				width: (48em * 0.5);
 			}
 		}
 
@@ -234,6 +243,9 @@
 
 			&.medium {
 				width: (95% * 0.75);
+			}
+			&.small {
+				width: (95% * 0.5);
 			}
 		}
 
@@ -490,18 +502,18 @@
 		display: inline-block;
 		position: relative;
 
-		&:after {
-			@include vendor('transition', 'opacity 0.25s ease-in-out');
-			// background-image: url('images/overlay.png');
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0.2;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+		// &:after {
+		// 	@include vendor('transition', 'opacity 0.25s ease-in-out');
+		// 	background-image: url('images/overlay.png');
+		// 	content: '';
+		// 	display: block;
+		// 	height: 100%;
+		// 	left: 0;
+		// 	opacity: 0.2;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	width: 100%;
+		// }
 
 		img {
 			display: block;
@@ -560,7 +572,7 @@
 		cursor: default;
 	}
 
-	// Services Images
+/* Services Images */
 	.half-width-images {
 		width: 80%;
 		margin: 0px auto 50px;
@@ -569,15 +581,19 @@
 	}
 
 
-	// Greyscale Logos
+/* Greyscale Logos */
 	.greyscaleLogoRow {
 		max-width: 51em;
 		width: 100%;
 		margin: -5em auto 0;
-
+		
+		@include breakpoint('<=normal') {
+			margin-top: -4em;
+		}
 		@include breakpoint('<=mobile') {
 			margin-top: -2em;
 		}
+
 	}
 	.greyscaleLogoRow > div {
 		padding: 3px;
@@ -873,7 +889,7 @@
 	.feature {
 		position: relative;
 		height: 20em;
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid _palette(border);
 
 		&:after {
 			clear: both;
@@ -897,6 +913,15 @@
 				height: 100%;
 				margin: auto;
 				// min-width: 100%;
+			}
+
+			@include breakpoint('<=mobilep') {
+				height: auto;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
 			}
 		}
 
@@ -968,8 +993,8 @@
 	.cultureheaderimg {
 		background-image:			url('images/top-3200.svg'),		url('images/overlay.png'),		url('../images/family.jpg') !important;
 	}
-	#header, #cultureheader {
-		background-attachment:		scroll,							scroll,					fixed;
+	#header {
+		background-attachment:		scroll,							scroll,					scroll;
 		background-image:			url('images/top-3200.svg'),		url('images/overlay.png'),		url('../images/header.jpg');
 		background-position:		bottom center,					top left,				center center;
 		background-repeat:			repeat-x,						repeat,					no-repeat;
@@ -1588,9 +1613,9 @@
 				padding-left: 2em;
 				padding-right: 2em;
 
-				br {
-					display: none;
-				}
+				// br {
+				// 	display: none;
+				// }
 			}
 
 	}
