@@ -117,9 +117,9 @@
 
 				<div class="container medium center">
 					<h3>The result:</h3>
-					<video autoplay muted loop class="videostyling"
+					<video muted loop class="videostyling" onclick="this.paused ? this.play() : this.pause();"
 						 src="https://res.cloudinary.com/dyuw0rfip/video/upload/v1571412048/walkthrough_pharmaforesight_original_h8icma.mov"
-						 poster="./images/casestudies-pfdt/PFDT_wireframes.png">
+						 poster="./images/casestudies/pharmaforesight/poster.png">
 							your browser doesn't support the video tag
 					</video>
 					<p><a href="http://pharma-foresight.surge.sh/">http://pharma-foresight.surge.sh</a></p>
@@ -129,7 +129,7 @@
 
 
 				<div class="box container medium center">
-						<h3>CALIBRE TIP</h3>
+						<h3>CALIBRE TIP: API Specs</h3>
 						<p class="tipquote">
 							When managing frontend and backend work at the same time, the best way to clarify the responsibility of each party is by writing API documentation upfront. By defining this 'interface', you can avoid huge delays in a project, where both developers could be emailing back and forth requesting changes to each others’ work in order for their own codebase to function correctly. We use <a href="https://www.getpostman.com">postman for mock APIs.</a><br/>
 							<strong>Bonus: </strong>Generally, this API documentation should be written by the frontend developer.
