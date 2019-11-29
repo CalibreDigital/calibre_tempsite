@@ -79,9 +79,9 @@
   top: 65px;
   left: 0;
   object-fit: cover;
-  object-position: 0 0;
+  object-position: 50% 0;
   z-index: -1;
-  height: calc(60vh - 66px);
+  height: calc(60vh - 67px);
 }
 .videostyling {
   width: 100%;
@@ -2147,5 +2147,6 @@ input[type="button"],
     border: solid 1px rgba(224, 224, 224, 1);
     border-radius: 4px;
     margin: auto;
-    width: 50%
+    width: 50%;
+    padding: 20px;
   }
