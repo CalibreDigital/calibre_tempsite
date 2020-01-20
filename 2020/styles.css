@@ -102,6 +102,7 @@ h1.name {
 	font-size: 70px;
 	font-weight: 300;
 	display: inline-block;
+	margin-bottom: 20px;
 }
 
 .job-title {
@@ -181,13 +182,18 @@ h1.name {
 }
 
 .list-card .exp {
-	margin-right: 15px;
+	margin-right: 2%;
 	color: #4A90E2;
 	font-weight: 600;
-	width: 100px;
+	width: 25%;
+	line-height: 1.3em;
 }
 
 .list-card div {
+	width: 70%;
+}
+ 
+.list-card .list-card-smaller {
 	width: 70%;
 }
 
@@ -426,7 +432,17 @@ li .description {
 		margin: 10px 0;
 		float: left;
 	}
-
+	.list-card .exp {
+		width: 100%;
+		margin-bottom: 30px;
+		color: #5B6A9A;
+	}
+	.list-card div, .list-card .list-card-smaller {
+		width: 100%;
+	}
+	.skill-meta {
+		max-width: 100%;
+	}
 	.timeline{
 		border: none;
 		background-color: rgba(0,0,0,0);
@@ -466,10 +482,17 @@ li .description {
 		padding: 10px
 	}
 
+	.list-card h3 {
+		font-size: 100%;
+	}
 	.lead {
 		margin-top: 15px;
 		font-size: 20px;
 		line-height: 28px;
+	}
+	.lead-text p {
+		font-size: 0.7em;
+		line-height: 1.4em;
 	}
 	.container {
 		margin: 0px;
