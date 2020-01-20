@@ -394,7 +394,6 @@ li .description {
 /*timeline ends*/
 
 
-
 /* Media queries*/
 
 @media(max-width: 1024px){
@@ -406,7 +405,7 @@ li .description {
 		position: relative;
 	}
 	.cards {
-		margin-top: 250px;
+		/*margin-top: 250px;*/
 	}
 }
 
