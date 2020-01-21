@@ -70,7 +70,6 @@ table {
 
 p {
 	color: #15171a;
-	font-size: 17;
 	line-height: 31px;
 }
 
@@ -126,14 +125,14 @@ h1.name {
 }
 
 .lead {
-	font-size: 44px;
+	font-size: 35px;
 	font-weight: 300;
 	margin-top: 60px;
 	line-height: 55px;
 }
 
 .lead-text {
-	font-size: 24px;
+	font-size: 20px;
     font-weight: 300;
     color: #81899C;
     margin-top: 10px;
