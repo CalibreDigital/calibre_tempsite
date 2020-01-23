@@ -166,8 +166,8 @@ h1.name {
 }
 
 .section-title {
-	font-size: 20px;
-	font-weight: 600;
+	font-size: 35px;
+	font-weight: 300;
 	margin-bottom: 15px;
 }
 
@@ -332,10 +332,10 @@ li {
 }
 li .line {
   position: absolute;
-  top: -47px;
+  top: -60px;
   left: 1%;
-  font-size: 20px;
-  font-weight: 600;
+  /*font-size: 20px;
+  font-weight: 600;*/
   color: #04143A;
 }
 li .point {
@@ -391,6 +391,17 @@ li .description {
 }
 
 /*timeline ends*/
+
+/*Footer styles*/
+
+.footer-styles {
+	font-size: 16px;
+	padding-bottom: 40px;
+	opacity: 0.7;
+	line-height: 1.5em;
+}
+
+/*Footer ends*/
 
 
 /* Media queries*/
@@ -489,7 +500,7 @@ li .description {
 		line-height: 28px;
 	}
 	.lead-text p {
-		font-size: 0.7em;
+		/*font-size: 0.7em;*/
 		line-height: 1.4em;
 	}
 	.container {
